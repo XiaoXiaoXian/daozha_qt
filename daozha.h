@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QGraphicsItem>
+#include <QTimer>
 
 namespace Ui {
 class daozha;
@@ -22,10 +23,18 @@ private:
     void initScene();
     void initSceneBackground();
 
+protected slots:
+    void jiaodu_change(void);
+
+protected:
+    void paintEvent(QPaintEvent *event);
+
+
 private:
     Ui::daozha *ui;
-    QGraphicsScene * scene;
-    QGraphicsView * view;
+    QTimer *tim;
+    qreal jiaodu;
+
 };
 
 #endif // DAOZHA_H

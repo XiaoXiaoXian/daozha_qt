@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>../ima/daozhai.jpg</file>
-        <file>../ima/gan.png</file>
+        <file>image/daozhagang.png</file>
+        <file>image/gan.png</file>
     </qresource>
 </RCC>
